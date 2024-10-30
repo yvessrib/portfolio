@@ -35,7 +35,7 @@ export function Header(){
 
         <button type="button" className="hidden lg:block py-0.5 px-6 bg-violet-500 rounded-[8px]">Currículo</button>
 
-        <div className="mt-[2px]">
+        <div className="mt-[2px] hidden lg:block">
           <MaterialUISwitch onClick={() => handleSetTheme()}/>
         </div>
 

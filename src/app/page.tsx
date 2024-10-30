@@ -1,4 +1,5 @@
 import { Header } from "@/pages/header";
+import { HeroParallax } from "@/pages/hero";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="flex flex-col items-center">
         <div className="max-w-[1440px] w-full mx-auto">
           <Header />
+          <HeroParallax />
         </div>
       </div>
     </div>

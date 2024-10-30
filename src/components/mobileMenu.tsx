@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Sheet,
   SheetContent,
@@ -5,8 +7,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { MaterialUISwitch } from "./styledSwtich"
+import { useContext } from "react"
+import { ThemeContext } from "@/contexts/ThemeContext"
 
 export function MobileMenu (){
+  const {handleSetTheme} = useContext(ThemeContext)
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -29,8 +36,10 @@ export function MobileMenu (){
           <span className="hover:text-violet-500">Experiências</span>
           <span className="hover:text-violet-500">Contato</span>
           <button type="button" className="py-2 px-8 bg-violet-500 rounded-[8px] text-white">Currículo</button>
+          <MaterialUISwitch onClick={() => handleSetTheme()}/>
         </div>
       </SheetContent>
+      
     </Sheet>
   )
 }
