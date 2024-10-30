@@ -20,9 +20,9 @@ export function Header(){
   const {handleSetTheme} = useContext(ThemeContext)
 
   return (
-    <header className="bg-white dark:bg-zinc-900 dark:text-white text-black flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center">
-      <span><span className="text-violet-500">&lt;</span> yves<span className="text-violet-500">.dev /&gt;</span></span>
-      <div className="flex flex-row gap-6 lg:gap-8">
+    <header className="font-firacode bg-white dark:bg-zinc-900 dark:text-white text-black flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center">
+      <span><span className="text-violet-500">&lt;</span> yves<span className="text-violet-500">.dev &gt;</span></span>
+      <div className="font-poppins flex flex-row gap-6 lg:gap-8">
         <ul className="flex-row gap-8 items-center transition-all lg:flex hidden">
           <li className="hover:text-violet-500">Sobre</li>
           <li className="hover:text-violet-500">Habilidades</li>

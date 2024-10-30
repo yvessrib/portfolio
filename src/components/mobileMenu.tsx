@@ -18,16 +18,17 @@ export function MobileMenu (){
           </div>
         </button>
       </SheetTrigger>
-      <SheetContent className="text-black dark:text-white">
+      <SheetContent>
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
-          <span className="hover:text-violet-500">Teste</span>
-          <span className="hover:text-violet-500">Teste</span>
-          <span className="hover:text-violet-500">Teste</span>
-          <span className="hover:text-violet-500">Teste</span>
-          <span className="hover:text-violet-500">Teste</span>
+        <div className="text-black dark:text-white font-poppins flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
+          <span className="hover:text-violet-500">Sobre</span>
+          <span className="hover:text-violet-500">Habilidades</span>
+          <span className="hover:text-violet-500">Projetos</span>
+          <span className="hover:text-violet-500">Experiências</span>
+          <span className="hover:text-violet-500">Contato</span>
+          <button type="button" className="py-2 px-8 bg-violet-500 rounded-[8px] text-white">Currículo</button>
         </div>
       </SheetContent>
     </Sheet>
