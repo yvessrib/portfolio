@@ -11,6 +11,16 @@ module.exports = {
   ],
   theme: {
   	extend: {
+      backgroundImage: {
+        'about-splash': "url('/splash_about.svg')",
+        'about-splash_mobile': "url('/splash_about_mobile.svg')",
+      },
+      boxShadow: {
+        glow: [
+          "0 0px 20px rgba(139, 92, 246, 0.35)",
+          "0 0px 65px rgba(139, 92, 246, 0.2)"
+        ]
+      },
       fontFamily: {
         firacode: ['var(--font-fira-code)'],
         poppins: ['var(--font-poppins)'],

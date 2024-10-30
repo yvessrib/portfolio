@@ -23,6 +23,7 @@ export function HeroParallax(){
   const moon_sun = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
   const text = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
   const mountain = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const mountain2 = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
 
   // function delay(ms: number) {
   //   return new Promise(resolve => setTimeout(resolve, ms))
@@ -130,23 +131,25 @@ export function HeroParallax(){
       />
 
       {theme === "dark" && (
-        <div
+        <motion.div
           className="absolute inset-0 z-[60]"
           style={{
             backgroundImage: "url('/parallax_effect/6.b.svg')",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            y: mountain2
           }}
         />
       )}
 
       {theme === "light" && (    
-        <div
+        <motion.div
           className="absolute inset-0 z-[60]"
           style={{
             backgroundImage: "url('/parallax_effect/6.a.svg')",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
+            y: mountain2
           }}
         />
       )}
