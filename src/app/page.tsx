@@ -1,6 +1,7 @@
 import { AboutMe } from "@/pages/about";
 import { Header } from "@/pages/header";
 import { HeroParallax } from "@/pages/hero";
+import { Skills } from "@/pages/skills";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function Home() {
           <div className="pt-16">
             <HeroParallax />
             <AboutMe />
+            <Skills />
           </div>
         </div>
       </div>

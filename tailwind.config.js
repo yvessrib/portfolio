@@ -17,8 +17,8 @@ module.exports = {
       },
       boxShadow: {
         glow: [
-          "0 0px 20px rgba(139, 92, 246, 0.35)",
-          "0 0px 65px rgba(139, 92, 246, 0.2)"
+          "0 0px 5px rgba(139, 92, 246, 0.35)",
+          "0 0px 30px 10px rgba(139, 92, 246, 0.2)"
         ]
       },
       fontFamily: {
@@ -30,7 +30,13 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {}
+  		screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1320px'
+      }
   	}
   },
   plugins: [require("tailwindcss-animate")],
