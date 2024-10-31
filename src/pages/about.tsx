@@ -17,7 +17,7 @@ export function AboutMe() {
         </div>
         <div className="w-full flex items-center justify-center">
           <div className="w-full flex items-center justify-center bg-about-splash_mobile md:bg-about-splash bg-center bg-no-repeat h-full min-h-[449px]">
-            <div className="rounded-full border-[5px] border-violet-700">
+            <div className="rounded-full border-[5px] border-violet-700 shadow-glow">
               <Image src={me} alt="" />
             </div>
           </div>

@@ -35,7 +35,7 @@ export function MobileMenu (){
           <span className="hover:text-violet-500">Projetos</span>
           <span className="hover:text-violet-500">Experiências</span>
           <span className="hover:text-violet-500">Contato</span>
-          <button type="button" className="py-2 px-8 bg-violet-500 rounded-[8px] text-white">Currículo</button>
+          <button type="button" className="py-2 px-8 bg-violet-500 rounded-[8px] text-white shadow-glow">Currículo</button>
           <MaterialUISwitch onClick={() => handleSetTheme()}/>
         </div>
       </SheetContent>
