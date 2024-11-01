@@ -117,7 +117,7 @@ export function HeroParallax(){
         <div className="relative top-[15%] md:top-16 font-poppins font-semibold flex flex-col text-center md:text-right px-8 text-wrap">
           <h4 className="text-violet-500  text-3xl md:text-4xl">Olá, meu nome é</h4>
           <h1 className="text-black dark:text-white text-6xl md:text-8xl">Yves Antônio</h1>
-          <h2 className="text-zinc-600 dark:text-zinc-200 text-4xl md:text-5xl">Sou um desenvolvedor Full Stack</h2>
+          <h2 className="text-zinc-600 dark:text-zinc-200 text-4xl md:text-5xl">Sou um desenvolvedor Front end</h2>
         </div>
       </motion.div>
       

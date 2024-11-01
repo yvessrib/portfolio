@@ -1,6 +1,7 @@
 import { AboutMe } from "@/pages/about";
 import { Header } from "@/pages/header";
 import { HeroParallax } from "@/pages/hero";
+import { Projects } from "@/pages/projects";
 import { Skills } from "@/pages/skills";
 import type { Metadata } from 'next';
 
@@ -20,6 +21,7 @@ export default function Home() {
             <HeroParallax />
             <AboutMe />
             <Skills />
+            <Projects />
           </div>
         </div>
       </div>
