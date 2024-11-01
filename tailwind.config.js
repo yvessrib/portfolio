@@ -31,7 +31,8 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		screens: {
-        'sm': '640px',
+        'pp': '320px',
+        'sm': '636px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
