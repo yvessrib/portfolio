@@ -1,4 +1,5 @@
 import { AboutMe } from "@/pages/about";
+import { Experiences } from "@/pages/experiences";
 import { Header } from "@/pages/header";
 import { HeroParallax } from "@/pages/hero";
 import { Projects } from "@/pages/projects";
@@ -22,6 +23,7 @@ export default function Home() {
             <AboutMe />
             <Skills />
             <Projects />
+            <Experiences />
           </div>
         </div>
       </div>
