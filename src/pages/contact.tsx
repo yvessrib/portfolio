@@ -53,34 +53,34 @@ export function Contact() {
           </form>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 md:gap-0 md:flex-row w-full md:justify-around max-w-[700px] pt-2">
+        <div className="flex flex-col items-center justify-center gap-4 md:gap-0 md:flex-row w-full md:justify-around max-w-[600px] pt-2">
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={phone} alt={''} />
+              <Image src={phone} alt={''} width={40} height={40}/>
             </div>
             <div className="flex flex-col">
               <span className="text-black dark:text-white font-semibold text-lg">Telefone</span>
-              <span className="text-zinc-600 font-semibold text-[20px]">(+55) 35 98423-2379</span>
+              <span className="text-zinc-600 font-semibold">(+55) 35 98423-2379</span>
             </div>
           </div>
 
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={linkedin} alt={''} />
+              <Image src={linkedin} alt={''} width={40} height={40} />
             </div>
             <div className="flex flex-col">
               <span className="text-black dark:text-white font-semibold text-lg">Linkedin</span>
-              <span className="text-zinc-600 font-semibold text-[20px]">@yvessrib</span>
+              <span className="text-zinc-600 font-semibold">@yvessrib</span>
             </div>
           </div>
 
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={github} alt={''} />
+              <Image src={github} alt={''} width={40} height={40} />
             </div>
             <div className="flex flex-col">
               <span className="text-black dark:text-white font-semibold text-lg">Github</span>
-              <span className="text-zinc-600 font-semibold text-[20px]">@yvessrib</span>
+              <span className="text-zinc-600 font-semibold">@yvessrib</span>
             </div>
           </div>
 

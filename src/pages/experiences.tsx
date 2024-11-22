@@ -47,17 +47,17 @@ export function Experiences() {
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
                 <span className="font-poppins font-semibold text-xl text-black dark:text-white">Cargo | Mês/Ano - Mês/Ano</span>
-                <span className="font-firacode font-semibold text-lg text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
+                <span className="font-firacode font-semibold text-base text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
               </div>
 
               <div className="flex flex-col gap-2">
                 <span className="font-poppins font-semibold text-xl text-black dark:text-white">Cargo | Mês/Ano - Mês/Ano</span>
-                <span className="font-firacode font-semibold text-lg text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
+                <span className="font-firacode font-semibold text-base text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
               </div>
 
               <div className="flex flex-col gap-2">
                 <span className="font-poppins font-semibold text-xl text-black dark:text-white">Cargo | Mês/Ano - Mês/Ano</span>
-                <span className="font-firacode font-semibold text-lg text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
+                <span className="font-firacode font-semibold text-base text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export function Experiences() {
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
                 <span className="font-poppins font-semibold text-xl text-black dark:text-white">Cargo | Mês/Ano - Mês/Ano</span>
-                <span className="font-firacode font-semibold text-lg text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
+                <span className="font-firacode font-semibold text-base text-zinc-800 dark:text-zinc-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet.</span>
               </div>
             </div>
           </div>

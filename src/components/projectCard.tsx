@@ -21,7 +21,7 @@ export function ProjectCard (variant: { direction: "left" | "right" }) {
     <div className={card({ direction: variant.direction })}>
        <div className={`${variant.direction === "right" ? "items-end" : ""} flex flex-col gap-6 p-4 w-full`}>
         <span className="font-poppins font-semibold text-2xl text-black dark:text-white">Título Lorem Ipsum</span>
-        <span className={`${variant.direction === "right" ? "text-right" : ""} font-firacode font-semibold text-lg text-black dark:text-zinc-200`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros.</span>
+        <span className={`${variant.direction === "right" ? "text-right" : ""} font-firacode font-semibold text-base text-black dark:text-zinc-200`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros.</span>
         <div className={`${variant.direction === "right" ? "flex-row-reverse" : "flex-row"} flex gap-3 font-firacode font-semibold text-sm text-black dark:text-white`}>
           <span className="bg-violet-400 px-2 py-1 rounded-3xl">ReactJs</span>
           <span className="bg-violet-400 px-2 py-1 rounded-3xl">ReactJs</span>
