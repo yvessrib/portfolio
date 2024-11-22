@@ -26,9 +26,12 @@
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-responsive": "^10.0.0",
     "tailwind-merge": "^2.5.4",
     "tailwind-variants": "^0.2.1",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.170.0",
+    "vanta": "^0.5.24",
     "vaul": "^1.1.1"
   },
   "devDependencies": {
