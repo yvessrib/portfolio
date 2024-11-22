@@ -15,7 +15,7 @@ import { ThemeContext } from "@/contexts/ThemeContext"
 import { MobileMenu } from "@/components/mobileMenu"
 import { MaterialUISwitch } from "@/components/styledSwtich"
 
-export function Header(){
+export default function Header(){
 
   const {handleSetTheme} = useContext(ThemeContext)
 

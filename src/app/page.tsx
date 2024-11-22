@@ -1,10 +1,11 @@
-import { AboutMe } from "@/pages/about";
-import { Contact } from "@/pages/contact";
-import { Experiences } from "@/pages/experiences";
-import { Header } from "@/pages/header";
-import { HeroParallax } from "@/pages/hero";
-import { Projects } from "@/pages/projects";
-import { Skills } from "@/pages/skills";
+import  AboutMe  from "@/pages/about";
+import  Contact  from "@/pages/contact";
+import  Experiences  from "@/pages/experiences";
+import  Footer  from "@/pages/footer";
+import  Header  from "@/pages/header";
+import  HeroParallax  from "@/pages/hero";
+import  Projects  from "@/pages/projects";
+import  Skills  from "@/pages/skills";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -19,13 +20,14 @@ export default function Home() {
           <div className="fixed w-full z-[100]">
             <Header />
           </div>
-          <div className="pt-16">
+          <div className="pt-20">
             <HeroParallax />
             <AboutMe />
             <Skills />
             <Projects />
             <Experiences />
             <Contact />
+            <Footer />
           </div>
         </div>
       </div>

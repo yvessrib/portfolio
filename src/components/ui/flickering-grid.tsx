@@ -1,11 +1,13 @@
 "use client";
 
+import { ThemeContext } from "@/contexts/ThemeContext";
 import React, {
   useCallback,
   useEffect,
   useMemo,
   useRef,
   useState,
+  useContext
 } from "react";
 
 interface FlickeringGridProps {
@@ -34,6 +36,13 @@ const FlickeringGrid: React.FC<FlickeringGridProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
+  
+  const {theme} = useContext(ThemeContext)
+
+  if (theme === 'dark') {
+    color = "#8b5cf6"
+  } else 
+    color = "#71717a"
 
   const memoizedColor = useMemo(() => {
     const toRGBA = (color: string) => {

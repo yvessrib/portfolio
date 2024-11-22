@@ -4,11 +4,11 @@ import { SectionHeader } from "@/components/sectionHeader";
 import StarImage from '../../public/star.svg';
 import Image from "next/image";
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 
 
-export function Experiences() {
+export default function Experiences() {
 
   const sectionRef = useRef(null);
   const sectionRef2 = useRef(null);
@@ -25,7 +25,7 @@ export function Experiences() {
 
 
   // Controla a altura da parte roxa da barra
-  const scaleY = useTransform(scrollYProgress1, [0, 1], [0, 1]);
+  // const scaleY = useTransform(scrollYProgress1, [0, 1], [0, 1]);
 
   return (
     <div className="dark:bg-zinc-900 bg-white px-8 md:px-16 py-6 md:py-12">

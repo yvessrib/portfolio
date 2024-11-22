@@ -2,7 +2,7 @@ import Image from "next/image";
 import me from '../../public/me.svg';
 import { SectionHeader } from "@/components/sectionHeader";
 
-export function AboutMe() {
+export default function AboutMe() {
   return (
     <div className="dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12">
       <SectionHeader sectionNumber={"001"} sectionName={"Sobre mim"} />

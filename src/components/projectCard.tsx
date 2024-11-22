@@ -1,9 +1,5 @@
 import Image from "next/image"
-import { twMerge } from "tailwind-merge"
 import Github_black from "../../public/github_black.svg"
-import Github_white from "../../public/github_white.svg"
-import Figma_black from "../../public/figma_black.svg"
-import Figma_white from "../../public/figma_white.svg"
 import { tv } from "tailwind-variants"
 
 const card = tv({
@@ -29,7 +25,7 @@ export function ProjectCard (variant: { direction: "left" | "right" }) {
         </div>
         <div className={`${variant.direction === "right" ? "flex-row-reverse" : "flex-row"} flex gap-4`}>
           <Image src={Github_black} alt="" width={40} height={40} className="block dark:hidden border-[2px] border-violet-500 rounded-full"/>
-          <Image src={Github_white} alt="" width={40} height={40} className="hidden dark:block border-[2px] border-violet-500 rounded-full"/>
+          {/* <Image src={Github_white} alt="" width={40} height={40} className="hidden dark:block border-[2px] border-violet-500 rounded-full"/> */}
         </div>
       </div>
       <div className="w-full">

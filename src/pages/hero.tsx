@@ -2,13 +2,13 @@
 
 import { ThemeContext } from "@/contexts/ThemeContext"
 import { motion, useScroll, useTransform } from "framer-motion"
-import React, { useContext, useEffect, useRef, useState } from "react"
+import React, { useContext, useEffect, useRef } from "react"
 
-function delay(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+// function delay(ms: number) {
+//   return new Promise(resolve => setTimeout(resolve, ms))
+// }
 
-export function HeroParallax(){
+export default function HeroParallax(){
 
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -17,8 +17,8 @@ export function HeroParallax(){
   })
 
   const {theme, isSwitching, switchTheme, setIsSwitching} = useContext(ThemeContext)
-  const [upTransition, setUpTransition] = useState(false)
-  const [downTransition, setDownTransition] = useState(false)
+  // const [upTransition, setUpTransition] = useState(false)
+  // const [downTransition, setDownTransition] = useState(false)
 
   const moon_sun = useTransform(scrollYProgress, [0, 1], ["0%", "120%"]);
   const text = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
