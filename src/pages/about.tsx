@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/sectionHeader";
 
 export default function AboutMe() {
   return (
-    <div className="dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12">
+    <div id="about" className="dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12">
       <SectionHeader sectionNumber={"001"} sectionName={"Sobre mim"} />
       <div className="flex flex-col md:flex-row gap-12 md:gap-8 justify-between">
         <div className="flex flex-col items-center justify-center gap-4 font-firacode text-base font-semibold text-black dark:text-white w-full">

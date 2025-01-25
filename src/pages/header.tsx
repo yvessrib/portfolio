@@ -26,11 +26,21 @@ export default function Header(){
       <div className="font-poppins flex flex-row gap-6 lg:gap-8">
         
         <ul className="flex-row gap-8 items-center transition-all lg:flex hidden">
-          <li className="hover:text-violet-500">Sobre</li>
-          <li className="hover:text-violet-500">Habilidades</li>
-          <li className="hover:text-violet-500">Projetos</li>
-          <li className="hover:text-violet-500">Experiências</li>
-          <li className="hover:text-violet-500">Contato</li>
+          <li className="hover:text-violet-500 hover:cursor-pointer">
+            <a href="#about">Sobre</a>
+          </li>
+          <li className="hover:text-violet-500 hover:cursor-pointer">
+            <a href="#skills">Habilidades</a>
+          </li>
+          <li className="hover:text-violet-500 hover:cursor-pointer">
+            <a href="projects">Projetos</a>
+          </li>
+          <li className="hover:text-violet-500 hover:cursor-pointer">
+            <a href="experiences">Experiências</a>
+          </li>
+          <li className="hover:text-violet-500 hover:cursor-pointer">
+            <a href="contact">Contato</a>
+          </li>
         </ul>
 
         <button type="button" className="hidden lg:block py-0.5 px-6 bg-violet-500 rounded-[8px] shadow-glow">Currículo</button>

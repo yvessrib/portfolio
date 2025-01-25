@@ -28,7 +28,7 @@ export default function Experiences() {
   // const scaleY = useTransform(scrollYProgress1, [0, 1], [0, 1]);
 
   return (
-    <div className="dark:bg-zinc-900 bg-white px-8 md:px-16 py-6 md:py-12">
+    <div id="experiences" className="dark:bg-zinc-900 bg-white px-8 md:px-16 py-6 md:py-12">
       <SectionHeader sectionNumber={"100"} sectionName={"Experiências"} />
     
       <div className="flex gap-6 mt-8">
