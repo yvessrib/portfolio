@@ -14,7 +14,7 @@ export default function Contact() {
     <div id="contact" className="relative dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12 bg-background overflow-hidden">
 
       <FlickeringGrid 
-        className="z-0 absolute inset-1 inset-y-2 size-full"
+        className="z-0 absolute inset-2 inset-y-2 size-full"
         squareSize={4}
         gridGap={8}
         color="#8b5cf6"
