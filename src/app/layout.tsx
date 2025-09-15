@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`vsc-initialized ${firaCode.variable} ${poppins.variable} transition-colors`} >
+      <body className={`vsc-initialized ${firaCode.variable} ${poppins.variable} transition-colors data-[scroll-locked]:!overflow-visible`} >
         <ParentProvider> 
           <ThemeHandler />
           {children}

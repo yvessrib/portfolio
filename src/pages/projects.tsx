@@ -1,7 +1,8 @@
-import { ProjectCard } from "@/components/projectCard";
+// import { ProjectCard } from "@/components/projectCard";
 import { SectionHeader } from "@/components/sectionHeader";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Brasil from "/public/brasil_flag.svg"
+import { ProjectCard } from "./projects-test";
 
 export default function Projects (){
   return (
@@ -13,11 +14,16 @@ export default function Projects (){
           <TabsTrigger value="courses" className="w-full">Cursos e Eventos</TabsTrigger>
         </TabsList>
         <TabsContent value="personal">
-          <ProjectCard direction="left" />
-          <ProjectCard direction="right" />
+          <ProjectCard
+            title="Projeto Incrível"
+            description="Feito com Next.js, TailwindCSS e animações com Framer Motion."
+            imageUrl={Brasil}
+          />
+          {/* <ProjectCard direction="left" />
+          <ProjectCard direction="right" /> */}
         </TabsContent>
         <TabsContent value="courses">
-          <ProjectCard direction="left" />
+          {/* <ProjectCard direction="left" /> */}
         </TabsContent>
       </Tabs>
     </div>

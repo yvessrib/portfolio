@@ -59,7 +59,7 @@ export default function HeroParallax(){
   return (
     <div 
       ref={ref}
-      className="bg-white dark:bg-zinc-900 w-full h-screen overflow-hidden relative grid place-items-center"
+      className="bg-white dark:bg-zinc-900 w- h-screen md:min-h-[650px] overflow-hidden relative grid place-items-center"
     >
 
       <motion.div
@@ -114,10 +114,10 @@ export default function HeroParallax(){
           y: text
         }}
       >
-        <div className="relative top-[15%] md:top-16 font-poppins font-semibold flex flex-col text-center md:text-right px-8 text-wrap">
+        <div className="relative top-[15%] gap-3 md:gap-0 md:top-16 font-poppins font-semibold flex flex-col text-center md:text-right px-8 text-wrap">
           <h4 className="text-violet-500  text-3xl md:text-4xl">Olá, meu nome é</h4>
           <h1 className="text-black dark:text-white text-6xl md:text-8xl">Yves Antônio</h1>
-          <h2 className="text-zinc-600 dark:text-zinc-200 text-4xl md:text-5xl">Sou um desenvolvedor Front end</h2>
+          <h2 className="text-zinc-900 dark:text-zinc-200 text-4xl md:text-5xl">Sou um desenvolvedor Full Stack</h2>
         </div>
       </motion.div>
       

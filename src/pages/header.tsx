@@ -14,10 +14,13 @@ import { useContext } from "react"
 import { ThemeContext } from "@/contexts/ThemeContext"
 import { MobileMenu } from "@/components/mobileMenu"
 import { MaterialUISwitch } from "@/components/styledSwtich"
+import { Button } from "@/components/ui/button"
+import SunIcon from "../../public/sun_icon.svg"
+import MoonIcon from "../../public/moon_icon.svg"
 
 export default function Header(){
 
-  const {handleSetTheme} = useContext(ThemeContext)
+  const {handleSetTheme, theme} = useContext(ThemeContext)
 
   return (
     <header className="font-firacode bg-white dark:bg-zinc-900 dark:text-white text-black flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center  ">
@@ -45,15 +48,19 @@ export default function Header(){
 
         <button type="button" className="hidden lg:block py-0.5 px-6 bg-violet-500 rounded-[8px] shadow-glow">Currículo</button>
 
-        <div className="mt-[2px] hidden lg:block">
-          <MaterialUISwitch onClick={() => handleSetTheme()}/>
-        </div>
+        <button className="mt-[2px] hidden md:block" onClick={() => handleSetTheme()}>
+          {theme === "dark" ? 
+            <Image src={SunIcon} className="" alt="Light Mode" width={30} height={30} />
+            :
+            <Image src={MoonIcon} className="" alt="Dark Mode" width={30} height={30} />
+          }
+        </button>
 
         <Select defaultValue="Portuguese">
-          <SelectTrigger>
+          <SelectTrigger className="w-[70px]">
             <SelectValue placeholder="Language" />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent className="w-[70px]">
             <SelectItem value="Portuguese" >
               <Image src={BrasilFlag} alt="Portuguese" width={24} height={24} />
             </SelectItem>
