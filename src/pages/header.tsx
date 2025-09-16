@@ -16,10 +16,17 @@ import { MobileMenu } from "@/components/mobileMenu"
 import { Button } from "@/components/ui/button"
 import SunIcon from "../../public/sun_icon.svg"
 import MoonIcon from "../../public/moon_icon.svg"
+import { useTranslation } from "react-i18next"
+import "../i18n.js"
 
 export default function Header(){
 
   const {handleSetTheme, theme} = useContext(ThemeContext)
+  const { t, i18n } = useTranslation()
+
+  const changeLanguage = (lng: string | undefined) => {
+    i18n.changeLanguage(lng)
+  }
 
   return (
     <header className="font-firacode bg-white dark:bg-zinc-900 dark:text-white text-black flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center  ">
@@ -29,25 +36,31 @@ export default function Header(){
         
         <ul className="flex-row gap-8 items-center transition-all lg:flex hidden">
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="#about">Sobre</a>
+            <a href="#about">{t("header.about")}</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="#skills">Habilidades</a>
+            <a href="#skills">{t("header.skills")}</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="#projects">Projetos</a>
+            <a href="#projects">{t("header.projects")}</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="#experiences">Experiências</a>
+            <a href="#experiences">{t("header.experiences")}</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="#contact">Contato</a>
+            <a href="#contact">{t("header.contact")}</a>
           </li>
         </ul>
 
-        <button type="button" className="hidden lg:block py-0.5 px-6 bg-violet-500 rounded-[8px] shadow-glow">Currículo</button>
+        <a
+          href={i18n.language === "pt" ? "/yves_resume_pt.pdf" : "/yves_resume_en.pdf"}
+          download
+          className="hidden lg:inline-flex items-center justify-center py-0.5 px-6 bg-violet-500 rounded-[8px] shadow-glow"
+        >
+          {t("header.resume")}
+        </a>
 
-        <button className="mt-[2px] hidden md:block" onClick={() => handleSetTheme()}>
+        <button className="mt-[2px] hidden lg:block" onClick={() => handleSetTheme()}>
           {theme === "dark" ? 
             <Image src={SunIcon} className="" alt="Light Mode" width={30} height={30} />
             :
@@ -55,15 +68,15 @@ export default function Header(){
           }
         </button>
 
-        <Select defaultValue="Portuguese">
+        <Select defaultValue="pt" onValueChange={(value) => changeLanguage(value)}>
           <SelectTrigger className="w-[70px]">
             <SelectValue placeholder="Language" />
           </SelectTrigger>
           <SelectContent className="w-[70px]">
-            <SelectItem value="Portuguese" >
+            <SelectItem value="pt">
               <Image src={BrasilFlag} alt="Portuguese" width={24} height={24} />
             </SelectItem>
-            <SelectItem value="English">
+            <SelectItem value="en">
               <Image src={UsaFlag} alt="Portuguese" width={24} height={24} />
             </SelectItem>
           </SelectContent>

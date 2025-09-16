@@ -11,6 +11,7 @@ import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast, Toaster } from "sonner";
+import { useTranslation } from "react-i18next";
 
 const formsResponse = z.object({
   nome: z.string().nonempty().min(2, {message: 'Porfavor entre com seu nome'}),
@@ -21,6 +22,8 @@ const formsResponse = z.object({
 type FormsResponse = z.infer<typeof formsResponse>
 
 export default function Contact() {
+
+  const { t } = useTranslation()
 
   const { register, handleSubmit, formState, reset } = useForm<FormsResponse>({
     resolver: zodResolver(formsResponse)
@@ -49,11 +52,11 @@ export default function Contact() {
     });
 
     if (response.ok) {
-      toast.success('Email enviado com sucesso!');
+      toast.success(t("contact.toast.success"));
       reset();
     }
     else {
-      toast.error('Erro ao enviar email. Por favor, tente novamente mais tarde.');
+      toast.error(t("contact.toast.error"));
       console.error('Erro ao enviar email:', response.statusText);
     }
   }
@@ -73,11 +76,11 @@ export default function Contact() {
         {/* <BackgroundBeams /> */}
       {/* )} */}
 
-      <SectionHeader sectionNumber={"101"} sectionName={"Contato"} />
+      <SectionHeader sectionNumber={"101"} sectionName={t("contact.title")} />
 
       <div className="relative z-20 flex flex-col justify-center items-center text-center gap-4">
         <div className="max-w-[634px]">
-          <span className="font-poppins font-bold text-4xl md:text-6xl dark:text-white text-black">Entre em contato comigo!</span>
+          <span className="font-poppins font-bold text-4xl md:text-6xl dark:text-white text-black">{t("contact.t2")}</span>
         </div>
         
         <div className="max-w-[634px]">
@@ -86,21 +89,21 @@ export default function Contact() {
               type="text"
               id="name"
               className="w-full px-4 py-2  dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
-              placeholder="Nome"
+              placeholder={t("contact.name")}
               {...register("nome")}
             />
             <input
               type="email"
               id="email"
               className="w-full px-4 py-2 dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
-              placeholder="E-mail"
+              placeholder={t("contact.email")}
               {...register("email")}
             />
             <textarea
               id="message"
               rows={4}
               className="resize-none w-full px-4 py-2 dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
-              placeholder="Mensagem"
+              placeholder={t("contact.message")}
               {...register("mensagem")}
             />
             <button
@@ -108,7 +111,7 @@ export default function Contact() {
               className="shadow-glow w-8/12 px-4 py-2 bg-violet-500 dark:bg-zinc-900 border border-violet-500 text-white dark:text-violet-500 rounded-[6px] font-semibold hover:bg-violet-700  dark:hover:bg-violet-500 hover:text-white transition focus:ring-white dark:focus:ring-violet-500 focus:outline-none"
               disabled={isLoading}
             >
-              {isLoading ? 'Enviando...' : 'Entrar em contato'}
+              {isLoading ? t("contact.button.loading") : t("contact.button.submit")}
             </button>
           </form>
         </div>
@@ -116,10 +119,10 @@ export default function Contact() {
         <div className="flex flex-col items-center justify-center gap-4 md:gap-0 md:flex-row w-full md:justify-around max-w-[600px] pt-2">
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="shadow-glow bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={phone} alt={''} width={40} height={40}/>
+              <a href="https://wa.me/5535984232379" target="_blank" rel="noopener noreferrer"><Image src={phone} alt={''} width={40} height={40}/></a>
             </div>
             <div className="flex flex-col">
-              <span className="text-black dark:text-white font-semibold text-lg">Telefone</span>
+              <span className="text-black dark:text-white font-semibold text-lg">{t("contact.cellphone")}</span>
               <span className="text-zinc-600 dark:text-zinc-300 font-semibold">(+55) 35 98423-2379</span>
             </div>
           </div>

@@ -14,9 +14,11 @@ import { Button } from "./ui/button"
 import SunIcon from "../../public/sun_icon.svg"
 import MoonIcon from "../../public/moon_icon.svg"
 import Image from "next/image"
+import { useTranslation } from "react-i18next"
 
 export function MobileMenu (){
   const {handleSetTheme, theme} = useContext(ThemeContext)
+  const { t, i18n } = useTranslation()
 
   return (
     <Sheet>
@@ -34,12 +36,20 @@ export function MobileMenu (){
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <div className="text-black dark:text-white font-poppins flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
-          <span className="hover:text-violet-500">Sobre</span>
-          <span className="hover:text-violet-500">Habilidades</span>
-          <span className="hover:text-violet-500">Projetos</span>
-          <span className="hover:text-violet-500">Experiências</span>
-          <span className="hover:text-violet-500">Contato</span>
-          <button type="button" className="py-2 px-8 bg-violet-500 rounded-[8px] text-white shadow-glow">Currículo</button>
+          <a href="#about"><span className="hover:text-violet-500">{t("about.title")}</span></a>
+          <a href="#skills"><span className="hover:text-violet-500">{t("skills.title")}</span></a>
+          <a href="#projects"><span className="hover:text-violet-500">{t("projects.title")}</span></a>
+          <a href="#experiences"><span className="hover:text-violet-500">{t("experiences.title")}</span></a>
+          <a href="#contact"><span className="hover:text-violet-500">{t("contact.title")}</span></a>
+
+          <a
+            href={i18n.language === "pt" ? "/yves_resume_pt.pdf" : "/yves_resume_en.pdf"}
+            download
+            className="inline-flex items-center justify-center py-2 px-8 bg-violet-500 rounded-[8px] shadow-glow"
+          >
+            {t("header.resume")}
+          </a>
+
           <button className="mt-[2px] block" onClick={() => handleSetTheme()}>
             {theme === "dark" ? 
               <Image src={SunIcon} alt="Light Mode" width={30} height={30} />

@@ -6,14 +6,17 @@ import { SkillsCarroussel } from "@/components/skillsCarroussel";
 import { ThemeContext } from "@/contexts/ThemeContext";
 import { useContext } from "react";
 import skills from "@/app/skills.json"
+import { useTranslation } from "react-i18next";
 
 export default function Skills (){
 
   const {theme} = useContext(ThemeContext)
 
+  const { t } = useTranslation()
+
   return (
     <div id="skills" className="dark:bg-zinc-900 bg-white px-8 md:px-16 py-6 md:py-12">
-      <SectionHeader sectionNumber={"010"} sectionName={"Habilidades"} />
+      <SectionHeader sectionNumber={"010"} sectionName={t("skills.title")} />
       <div className="flex flex-col items-center justify-center">
         <div className=" gap-3 hidden md:flex flex-wrap justify-center">
           {skills.map((card) => (

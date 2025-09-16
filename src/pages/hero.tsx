@@ -3,12 +3,15 @@
 import { ThemeContext } from "@/contexts/ThemeContext"
 import { motion, useScroll, useTransform } from "framer-motion"
 import React, { useContext, useEffect, useRef } from "react"
+import { useTranslation } from "react-i18next"
 
 // function delay(ms: number) {
 //   return new Promise(resolve => setTimeout(resolve, ms))
 // }
 
 export default function HeroParallax(){
+
+  const { t } = useTranslation()
 
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -115,9 +118,9 @@ export default function HeroParallax(){
         }}
       >
         <div className="relative top-[15%] gap-3 md:gap-0 md:top-16 font-poppins font-semibold flex flex-col text-center md:text-right px-8 text-wrap">
-          <h4 className="text-violet-500  text-3xl md:text-4xl">Olá, meu nome é</h4>
-          <h1 className="text-black dark:text-white text-6xl md:text-8xl">Yves Antônio</h1>
-          <h2 className="text-zinc-900 dark:text-zinc-200 text-4xl md:text-5xl">Sou um desenvolvedor Full Stack</h2>
+          <h4 className="text-violet-500  text-3xl md:text-4xl">{t("hero.t1")}</h4>
+          <h1 className="text-black dark:text-white text-6xl md:text-8xl">{t("hero.t2")}</h1>
+          <h2 className="text-zinc-900 dark:text-zinc-200 text-4xl md:text-5xl">{t("hero.t3")}</h2>
         </div>
       </motion.div>
       

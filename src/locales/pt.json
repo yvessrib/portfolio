@@ -1,0 +1,58 @@
+{
+  "header.contact": "Contato",
+  "header.skills": "Habilidades",
+  "header.about": "Sobre",
+  "header.projects": "Projetos",
+  "header.resume": "Currículo",
+  "header.experiences": "Experiências",
+
+  "hero.t1": "Olá, meu nome é",
+  "hero.t2": "Yves Antônio",
+  "hero.t3": "Um Desenvolvedor Full Stack",
+
+  "about.title": "Sobre Mim",
+  "about.p1": "Sou um jovem apaixonado por tecnologia, jogos e música! Tive meu primeiro contato com Desenvolvimento Web em 2022, ao ingressar em uma Empresa Júnior, onde descobri uma grande afinidade com a área. Durante o ano de 2023, atuei como diretor, aprendendo na prática sobre liderança e trabalho em equipe.",
+  "about.p2": "Desde então, venho me aperfeiçoando por meio de uma combinação de cursos online, projetos pessoais e a grade curricular da minha faculdade de Engenharia da Computação. Hoje, me considero um Desenvolvedor Full Stack, com ênfase em Front-end e experiência formal também em Back-end. Pretendo continuar estudando e explorando áreas como UX Design e Análise de Dados no futuro.",
+
+  "skills.title": "Habilidades",
+
+  "projects.title": "Projetos",
+
+  "experiences.title": "Experiências",
+  "experiences.job1": "CP2eJr - Empresa Júnior",
+  "experciences.job1.t1": "Trainee de Projetos | 03/2022 - 06/2022",
+  "experiences.job1.t1.p": "Como Trainee de Projetos, atuei em projetos de desenvolvimento web como parte da equipe técnica, com foco em front-end. Contribuí para a implementação de interfaces e recursos interativos, utilizando tecnologias como HTML, CSS e JavaScript, além de aplicar práticas de versionamento e metodologias ágeis como Git, GitHub, Scrum e Kanban.",
+
+  "experiences.job1.t2": "Assessor de Projetos | 07/2022 - 07/2023",
+  "experiences.job1.t2.p": "Atuei como Assessor de Desenvolvimento na CP2eJr, desempenhando funções de desenvolvedor front-end e gerente de projetos, onde criei sites utilizando HTML, CSS e JavaScript, e gerenciei projetos com ferramentas como Jira, GitHub e Pipefy, otimizando fluxos de trabalho e promovendo a colaboração eficaz da equipe de desenvolvimento.",
+
+  "experiences.job1.t3": "Diretor de Projetos | 07/2022 - 07/2023",
+  "experiences.job1.t3.p": "Atuei como Diretor de Desenvolvimento na CP2eJr, liderando a equipe de desenvolvimento web e supervisionando projetos para garantir eficiência e colaboração, utilizando ferramentas como Jira, Pipefy, Notion e GitHub Organizations. Mentorei membros da equipe para aprimorar habilidades técnicas, desenvolvi aplicações web com HTML, CSS, JavaScript, React.js e Node.js, e contribui para o planejamento estratégico trimestral da empresa, apoiando o alcance das metas organizacionais.",
+
+  "experiences.job2": "Amiko Soluções – Startup",
+  "experiences.job2.t1": "Estagiário Full-Stack | 07/2023 – Atualmente",
+  "experiences.job2.t1.p": "Atuei no desenvolvimento de uma assistente virtual beira-leito para hospitais utilizando ReactJs, NextJs, NodeJs e AWS, além de reformular o site da empresa com NextJs e AWS, garantindo uma experiência mais otimizada e um site totalmente responsivo.",
+
+  "experiences.job3": "Inatel – Instituto Nacional de Telecomunicações",
+  "experiences.job3.t1": "Engenharia da Computação | 01/2021 - Atualmente",
+  "experiences.job3.t1.p": "Atuei no desenvolvimento de uma assistente virtual beira-leito para hospitais utilizando ReactJs, NextJs, NodeJs e AWS, além de reformular o site da empresa com NextJs e AWS, garantindo uma experiência mais otimizada e um site totalmente responsivo.",
+
+  "experiences.job3.t2": "Monitor de Banco de Dados I | 08/2023 - 12/2024",
+  "experiences.job3.t2.p": "Atuei como Monitor de Ensino na disciplina Banco de Dados I, planejando, desenvolvendo e ministrando aulas para alunos de engenharia, ensinando fundamentos de MySQL e conceitos de gerenciamento de banco de dados. Ofereci suporte a alunos e professores, auxiliando na aplicação de provas e avaliação de trabalhos, contribuindo para o aprendizado e desempenho acadêmico da turma.",
+
+  "experiences.job3.t3": "Programação 1.0 - Iniciação Científica | 02/2022 - 06/2023",
+  "experiences.job3.t3.p": "Atuei como Assistente de Ensino em Programação em Python, planejando, desenvolvendo e ministrando aulas para alunos do ensino médio, introduzindo-os à programação por meio de competições interescolares e criando conteúdos educacionais envolventes para estimular o pensamento lógico e habilidades de resolução de problemas.",
+
+  "contact.title": "Contato",
+  "contact.t2": "Entre em contato comigo",
+  "contact.name": "Nome",
+  "contact.email": "Email",
+  "contact.message": "Mensagem",
+  "contact.button.loading": "Enviando...",
+  "contact.button.submit": "Entrar em contato",
+  "contact.cellphone": "Celular",
+  "contact.toast.success": "Mensagem enviada com sucesso!",
+  "contact.toast.error": "Erro ao enviar a mensagem. Tente novamente mais tarde.",
+
+  "footer.text": "Todos os direitos reservados."
+}

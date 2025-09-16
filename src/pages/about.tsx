@@ -1,18 +1,23 @@
+"use client"
+
 import Image from "next/image";
 import me from '../../public/yves_square.jpg';
 import { SectionHeader } from "@/components/sectionHeader";
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
+  const { t } = useTranslation()
+
   return (
     <div id="about" className="dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12">
-      <SectionHeader sectionNumber={"001"} sectionName={"Sobre mim"} />
+      <SectionHeader sectionNumber={"001"} sectionName={t("about.title")} />
       <div className="flex flex-col md:flex-row gap-12 md:gap-8 justify-between">
         <div className="flex flex-col items-center justify-center gap-4 font-firacode text-base font-semibold text-black dark:text-white w-full">
           <span> 
-            Sou um jovem apaixonado por tecnologia, jogos e música! Tive meu primeiro contato com Desenvolvimento Web em 2022, ao ingressar em uma Empresa Júnior, onde descobri uma grande afinidade com a área. Durante o ano de 2023, atuei como diretor, aprendendo na prática sobre liderança e trabalho em equipe.
+            {t("about.p1")}
           </span>
           <span>
-            Desde então, venho me aperfeiçoando por meio de uma combinação de cursos online, projetos pessoais e a grade curricular da minha faculdade de Engenharia da Computação. Hoje, me considero um Desenvolvedor Full Stack, com ênfase em Front-end e experiência formal também em Back-end. Pretendo continuar estudando e explorando áreas como UX Design e Análise de Dados no futuro.
+            {t("about.p2")}
           </span>
         </div>
         <div className="w-full flex items-center justify-center">

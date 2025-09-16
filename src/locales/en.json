@@ -1,0 +1,58 @@
+{
+  "header.contact": "Contact",
+  "header.skills": "Skills",
+  "header.about": "About",
+  "header.projects": "Projects",
+  "header.resume": "Resume",
+  "header.experiences": "Experiences",
+
+  "hero.t1": "Hi, my name is",
+  "hero.t2": "Yves Antônio",
+  "hero.t3": "A Full Stack Developer",
+
+  "about.title": "About Me",
+  "about.p1": "I am a young professional passionate about technology, games, and music! I had my first contact with Web Development in 2022, when I joined a Junior Enterprise, where I discovered a strong affinity with the field. In 2023, I served as director, gaining hands-on experience in leadership and teamwork.",
+  "about.p2": "Since then, I have been improving my skills through a combination of online courses, personal projects, and the curriculum of my Computer Engineering degree. Today, I consider myself a Full Stack Developer, with an emphasis on Front-end and formal experience in Back-end as well. I intend to continue studying and exploring areas such as UX Design and Data Analysis in the future",
+
+  "skills.title": "Skills",
+
+  "projects.title": "Projects",
+
+  "experiences.title": "Experiences",
+  "experiences.job1": "CP2eJr - Junior Enterprise",
+  "experiences.job1.t1": "Project Trainee | 03/2022 - 06/2022",
+  "experiences.job1.t1.p": "As a Project Trainee, I worked on web development projects as part of the technical team, with a focus on front-end. I contributed to the implementation of interfaces and interactive features, using technologies such as HTML, CSS, and JavaScript, while applying version control practices and agile methodologies like Git, GitHub, Scrum, and Kanban.",
+
+  "experiences.job1.t2": "Project Advisor | 07/2022 - 07/2023",
+  "experiences.job1.t2.p": "I worked as a Project Advisor at CP2eJr, performing both front-end development and project management roles. I created websites using HTML, CSS, and JavaScript, and managed projects with tools such as Jira, GitHub, and Pipefy, optimizing workflows and promoting effective collaboration within the development team.",
+
+  "experiences.job1.t3": "Project Director | 07/2022 - 07/2023",
+  "experiences.job1.t3.p": "I served as Development Director at CP2eJr, leading the web development team and overseeing projects to ensure efficiency and collaboration, using tools such as Jira, Pipefy, Notion, and GitHub Organizations. I mentored team members to enhance technical skills, developed web applications with HTML, CSS, JavaScript, React.js, and Node.js, and contributed to the company’s quarterly strategic planning, supporting the achievement of organizational goals.",
+
+  "experiences.job2": "Amiko Soluções – Startup",
+  "experiences.job2.t1": "Full-Stack Intern | 07/2023 – Present",
+  "experiences.job2.t1.p": "I worked on the development of a bedside virtual assistant for hospitals using React.js, Next.js, Node.js, and AWS, in addition to redesigning the company’s website with Next.js and AWS, ensuring a more optimized experience and a fully responsive site.",
+
+  "experiences.job3": "Inatel – Instituto Nacional de Telecomunicações",
+  "experiences.job3.t1": "Computer Engineering | 01/2021 – Present",
+  "experiences.job3.t1.p": "I worked on the development of a bedside virtual assistant for hospitals using React.js, Next.js, Node.js, and AWS, in addition to redesigning the company’s website with Next.js and AWS, ensuring a more optimized experience and a fully responsive site.",
+
+  "experiences.job3.t2": "Database I Teaching Assistant | 01/2021 – Present",
+  "experiences.job3.t2.p": "I served as a teaching assistant for the Database I course, planning, developing, and delivering lessons for engineering students, teaching MySQL fundamentals and database management concepts. I provided support to students and professors, assisting with exams and project evaluations, contributing to students’ learning and academic performance.",
+
+  "experiences.job3.t3": "Programming 1.0 – Scientific Initiation | 01/2021 – Present",
+  "experiences.job3.t3.p": "I acted as a Python teaching assistant, planning, developing, and delivering lessons for high school students. I introduced them to programming through interschool competitions and created engaging educational content to foster logical thinking and problem-solving skills.",
+
+  "contact.title": "Contact",
+  "contact.t2": "Get in touch with me",
+  "contact.name": "Name",
+  "contact.email": "Email",
+  "contact.message": "Message",
+  "contact.button.loading": "Sending...",
+  "contact.button.submit": "Get in touch",
+  "contact.cellphone": "Cellphone",
+  "contact.toast.success": "Message sent successfully!",
+  "contact.toast.error": "Error sending message. Please try again later.",
+
+  "footer.text": "All rights reserved."
+}
