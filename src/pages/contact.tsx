@@ -1,3 +1,5 @@
+"use client";
+
 import { SectionHeader } from "@/components/sectionHeader";
 import phone from "../../public/phone_contact.svg";
 import linkedin from "../../public/linkedin_contact.svg"
@@ -5,10 +7,56 @@ import github from "../../public/github_contact.svg"
 import Image from "next/image";
 import FlickeringGrid from "@/components/ui/flickering-grid";
 // import { useMediaQuery } from "react-responsive";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast, Toaster } from "sonner";
+
+const formsResponse = z.object({
+  nome: z.string().nonempty().min(2, {message: 'Porfavor entre com seu nome'}),
+  email: z.string().nonempty().email({message: 'Porfavor entre com um email válido'}),
+  mensagem: z.string().nonempty().min(10, {message: 'Porfavor entre com uma mensagem de no mínimo 10 caracteres'}),
+})
+
+type FormsResponse = z.infer<typeof formsResponse>
 
 export default function Contact() {
-  
+
+  const { register, handleSubmit, formState, reset } = useForm<FormsResponse>({
+    resolver: zodResolver(formsResponse)
+  });
+
+  const isLoading = formState.isSubmitting;
+
   // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const onSubmit = async (data: FormsResponse) => {
+    const mailText = 
+    `Nome: ${data.nome}\n` +
+    `Email: ${data.email}\n` +
+    `Mensagem: ${data.mensagem}`;
+
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: data.email,
+        subject: `Contato pelo portfólio - ${data.nome}`,
+        text: mailText,
+      }),
+    });
+
+    if (response.ok) {
+      toast.success('Email enviado com sucesso!');
+      reset();
+    }
+    else {
+      toast.error('Erro ao enviar email. Por favor, tente novamente mais tarde.');
+      console.error('Erro ao enviar email:', response.statusText);
+    }
+  }
 
   return (
     <div id="contact" className="relative dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-20 bg-background overflow-hidden">
@@ -33,30 +81,34 @@ export default function Contact() {
         </div>
         
         <div className="max-w-[634px]">
-          <form className="p-6 rounded-lg space-y-4">
+          <form className="p-6 rounded-lg space-y-4" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
               id="name"
               className="w-full px-4 py-2  dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
               placeholder="Nome"
+              {...register("nome")}
             />
             <input
               type="email"
               id="email"
               className="w-full px-4 py-2 dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
               placeholder="E-mail"
+              {...register("email")}
             />
             <textarea
               id="message"
               rows={4}
               className="resize-none w-full px-4 py-2 dark:bg-zinc-900 text-white rounded-[6px] border border-violet-400 dark:border-zinc-700 focus:ring-2 focus:ring-violet-500 focus:outline-none"
               placeholder="Mensagem"
+              {...register("mensagem")}
             />
             <button
               type="submit"
               className="shadow-glow w-8/12 px-4 py-2 bg-violet-500 dark:bg-zinc-900 border border-violet-500 text-white dark:text-violet-500 rounded-[6px] font-semibold hover:bg-violet-700  dark:hover:bg-violet-500 hover:text-white transition focus:ring-white dark:focus:ring-violet-500 focus:outline-none"
+              disabled={isLoading}
             >
-              Entrar em contato
+              {isLoading ? 'Enviando...' : 'Entrar em contato'}
             </button>
           </form>
         </div>
@@ -74,7 +126,7 @@ export default function Contact() {
 
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="shadow-glow bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={linkedin} alt={''} width={40} height={40} />
+              <a href="https://www.linkedin.com/in/yvessrib" target="_blank" rel="noopener noreferrer"><Image src={linkedin} alt={''} width={40} height={40} /></a>
             </div>
             <div className="flex flex-col">
               <span className="text-black dark:text-white font-semibold text-lg">Linkedin</span>
@@ -84,7 +136,7 @@ export default function Contact() {
 
           <div className="flex flex-col items-center gap-2 max-w-[222px] w-full">
             <div className="shadow-glow bg-white dark:bg-zinc-900 w-fit h-fit p-4 rounded-full flex items-center justify-center border border-violet-500 dark:border-none">
-              <Image src={github} alt={''} width={40} height={40} />
+              <a href="https://github.com/yvessrib" target="_blank" rel="noopener noreferrer"><Image src={github} alt={''} width={40} height={40} /></a>
             </div>
             <div className="flex flex-col">
               <span className="text-black dark:text-white font-semibold text-lg">Github</span>
@@ -94,6 +146,7 @@ export default function Contact() {
 
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
