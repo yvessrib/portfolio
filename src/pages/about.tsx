@@ -9,10 +9,10 @@ export default function AboutMe() {
       <div className="flex flex-col md:flex-row gap-12 md:gap-8 justify-between">
         <div className="flex flex-col items-center justify-center gap-4 font-firacode text-base font-semibold text-black dark:text-white w-full">
           <span> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. 
+            Sou um jovem apaixonado por tecnologia, jogos e música! Tive meu primeiro contato com Desenvolvimento Web em 2022, ao ingressar em uma Empresa Júnior, onde descobri uma grande afinidade com a área. Durante o ano de 2023, atuei como diretor, aprendendo na prática sobre liderança e trabalho em equipe.
           </span>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sem, blandit luctus leo ac, accumsan vulputate eros. Nullam at felis id mi iaculis tincidunt. Sed dignissim tellus in odio maximus, in luctus tellus pulvinar. Cras semper arcu cursus consequat malesuada. Sed a leo non mi tempor ornare. Curabitur luctus consequat laoreet. In volutpat commodo dui, quis aliquam mi tristique vel. 
+            Desde então, venho me aperfeiçoando por meio de uma combinação de cursos online, projetos pessoais e a grade curricular da minha faculdade de Engenharia da Computação. Hoje, me considero um Desenvolvedor Full Stack, com ênfase em Front-end e experiência formal também em Back-end. Pretendo continuar estudando e explorando áreas como UX Design e Análise de Dados no futuro.
           </span>
         </div>
         <div className="w-full flex items-center justify-center">
