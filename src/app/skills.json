@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "icon": "/skills_icons/html-5.svg",
+    "skillName": "HTML 5"
+  },
+  {
+    "id": 2,
+    "icon": "/skills_icons/css.svg",
+    "skillName": "CSS 3"
+  },
+  {
+    "id": 3,
+    "icon": "/skills_icons/javascript.svg",
+    "skillName": "JavaScript"
+  },
+  {
+    "id": 4,
+    "icon": "/skills_icons/typescript.svg",
+    "skillName": "TypeScript"
+  },
+  {
+    "id": 5,
+    "icon": "/skills_icons/react.svg",
+    "skillName": "React"
+  },
+  {
+    "id": 6,
+    "icon": "/skills_icons/nextjs.svg",
+    "skillName": "Next.js"
+  },
+  {
+    "id": 7,
+    "icon": "/skills_icons/node-js.svg",
+    "skillName": "Node.js"
+  },
+  {
+    "id": 8,
+    "icon": "/skills_icons/mongo.svg",
+    "skillName": "MongoDB"
+  },
+  {
+    "id": 9,
+    "icon": "/skills_icons/postgresql.svg",
+    "skillName": "PostgreSQL"
+  },
+  {
+    "id": 10,
+    "icon": "/skills_icons/git.svg",
+    "skillName": "Git"
+  },
+  {
+    "id": 11,
+    "icon": "/skills_icons/aws.svg",
+    "skillName": "AWS"
+  },
+  {
+    "id": 12,
+    "icon": "/skills_icons/tailwind.svg",
+    "skillName": "Tailwind CSS"
+  }
+]

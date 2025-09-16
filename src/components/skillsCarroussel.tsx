@@ -15,9 +15,11 @@ import { twMerge } from "tailwind-merge"
 
 interface SkillsCarrousselProps {
   className?: string;
+  skills?: Array<{ icon: string; skillName: string }>;
+  theme: string;
 }
 
-export function SkillsCarroussel({className}: SkillsCarrousselProps){
+export function SkillsCarroussel({className, skills, theme}: SkillsCarrousselProps){
   const plugin = React.useRef(
     Autoplay({delay: 2000, stopOnInteraction: true})
   )
@@ -34,15 +36,11 @@ export function SkillsCarroussel({className}: SkillsCarrousselProps){
       className={twMerge("w-full justify-center", className)}
     >
       <CarouselContent>
-        <CarouselItem className="sm:basis-1/2">
-          <CardSkills />
-        </CarouselItem>
-        <CarouselItem className="sm:basis-1/2">
-          <CardSkills />
-        </CarouselItem>
-        <CarouselItem className="sm:basis-1/2">
-          <CardSkills />
-        </CarouselItem>
+        {skills?.map((skill, index) => (
+          <CarouselItem key={index} className="sm:basis-1/2">
+            <CardSkills icon={skill.icon} skillName={skill.skillName} theme={theme} />
+          </CarouselItem>
+        ))}
       </CarouselContent>
       
       <CarouselPrevious />
