@@ -20,7 +20,7 @@ export default function Home() {
           <div className="fixed w-full z-[100]">
             <Header />
           </div>
-          <div className="pt-20">
+          <div className="pt-20" id="hero">
             <HeroParallax />
             <AboutMe />
             <Skills />

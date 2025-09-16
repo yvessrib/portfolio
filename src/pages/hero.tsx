@@ -59,7 +59,7 @@ export default function HeroParallax(){
   return (
     <div 
       ref={ref}
-      className="bg-white dark:bg-zinc-900 w- h-screen md:min-h-[650px] overflow-hidden relative grid place-items-center"
+      className="bg-white dark:bg-zinc-900 h-screen md:min-h-[650px] overflow-hidden relative grid place-items-center"
     >
 
       <motion.div

@@ -5,6 +5,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@mui/material"
+import { DialogTitle } from "@radix-ui/react-dialog"
 
 type ProjectCardProps = {
   title: string
@@ -30,13 +31,12 @@ export function ProjectCard({ title, description, imageUrl }: ProjectCardProps) 
             <h3 className="text-white text-xl font-bold drop-shadow-md">{title}</h3>
           </div>
         </button> */}
-        <Button>
           Clica ai troxa
-        </Button>
       </DialogTrigger>
 
-          <DialogContent className="max-w-xl bg-background p-6 rounded-xl shadow-xl">
+      <DialogContent className="max-w-xl bg-background p-6 rounded-xl shadow-xl">
       <AnimatePresence>
+        <DialogTitle>{title}</DialogTitle>
         {open && (
             <motion.div
               initial={{ opacity: 0, y: -20 }}

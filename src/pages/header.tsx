@@ -13,7 +13,6 @@ import UsaFlag from '../../public/usa_flag.svg'
 import { useContext } from "react"
 import { ThemeContext } from "@/contexts/ThemeContext"
 import { MobileMenu } from "@/components/mobileMenu"
-import { MaterialUISwitch } from "@/components/styledSwtich"
 import { Button } from "@/components/ui/button"
 import SunIcon from "../../public/sun_icon.svg"
 import MoonIcon from "../../public/moon_icon.svg"
@@ -24,7 +23,7 @@ export default function Header(){
 
   return (
     <header className="font-firacode bg-white dark:bg-zinc-900 dark:text-white text-black flex flex-row text-base justify-between sticky px-4 lg:px-12 py-3 items-center  ">
-      <span><span className="text-violet-500">&lt;</span> yves<span className="text-violet-500">.dev &gt;</span></span>
+      <a href="#hero"><span><span className="text-violet-500">&lt;</span> yves<span className="text-violet-500">.dev &gt;</span></span></a>
 
       <div className="font-poppins flex flex-row gap-6 lg:gap-8">
         
@@ -36,13 +35,13 @@ export default function Header(){
             <a href="#skills">Habilidades</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="projects">Projetos</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="experiences">Experiências</a>
+            <a href="#experiences">Experiências</a>
           </li>
           <li className="hover:text-violet-500 hover:cursor-pointer">
-            <a href="contact">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import me from '../../public/me.svg';
+import me from '../../public/yves_square.jpg';
 import { SectionHeader } from "@/components/sectionHeader";
 
 export default function AboutMe() {
@@ -18,7 +18,7 @@ export default function AboutMe() {
         <div className="w-full flex items-center justify-center">
           <div className="w-full flex items-center justify-center bg-none lg:bg-about-splash bg-center bg-no-repeat h-full min-h-[449px]">
             <div className="rounded-full border-[5px] border-violet-700 shadow-glow">
-              <Image src={me} alt=""/>
+              <Image src={me} alt="" className="rounded-full" width={370}/>
             </div>
           </div>
         </div>

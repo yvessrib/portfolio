@@ -11,7 +11,7 @@ export default function Contact() {
   // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <div id="contact" className="relative dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-12 bg-background overflow-hidden">
+    <div id="contact" className="relative dark:bg-zinc-800 bg-violet-200 px-8 md:px-16 py-6 md:py-20 bg-background overflow-hidden">
 
       <FlickeringGrid 
         className="z-0 absolute inset-2 inset-y-2 size-full"
