@@ -4,7 +4,7 @@ import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog"
 import { useState } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "@mui/material"
+// import { Button } from "@mui/material"
 import { DialogTitle } from "@radix-ui/react-dialog"
 
 type ProjectCardProps = {

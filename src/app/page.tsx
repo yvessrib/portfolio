@@ -4,7 +4,7 @@ import  Experiences  from "@/pages/experiences";
 import  Footer  from "@/pages/footer";
 import  Header  from "@/pages/header";
 import  HeroParallax  from "@/pages/hero";
-import  Projects  from "@/pages/projects";
+// import  Projects  from "@/pages/projects";
 import  Skills  from "@/pages/skills";
 import type { Metadata } from 'next';
 
