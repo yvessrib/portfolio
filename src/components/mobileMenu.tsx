@@ -38,7 +38,7 @@ export function MobileMenu (){
         <div className="text-black dark:text-white font-poppins flex flex-col justify-center items-center gap-10 h-full py-10 text-xl">
           <a href="#about"><span className="hover:text-violet-500">{t("about.title")}</span></a>
           <a href="#skills"><span className="hover:text-violet-500">{t("skills.title")}</span></a>
-          <a href="#projects"><span className="hover:text-violet-500">{t("projects.title")}</span></a>
+          {/* <a href="#projects"><span className="hover:text-violet-500">{t("projects.title")}</span></a> */}
           <a href="#experiences"><span className="hover:text-violet-500">{t("experiences.title")}</span></a>
           <a href="#contact"><span className="hover:text-violet-500">{t("contact.title")}</span></a>
 

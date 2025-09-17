@@ -41,9 +41,9 @@ export default function Header(){
           <li className="hover:text-violet-500 hover:cursor-pointer">
             <a href="#skills">{t("header.skills")}</a>
           </li>
-          <li className="hover:text-violet-500 hover:cursor-pointer">
+          {/* <li className="hover:text-violet-500 hover:cursor-pointer">
             <a href="#projects">{t("header.projects")}</a>
-          </li>
+          </li> */}
           <li className="hover:text-violet-500 hover:cursor-pointer">
             <a href="#experiences">{t("header.experiences")}</a>
           </li>

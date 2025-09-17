@@ -24,7 +24,7 @@ export default function Home() {
             <HeroParallax />
             <AboutMe />
             <Skills />
-            <Projects />
+            {/* <Projects /> */}
             <Experiences />
             <Contact />
             <Footer />
