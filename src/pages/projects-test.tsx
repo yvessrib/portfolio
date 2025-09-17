@@ -13,7 +13,7 @@ type ProjectCardProps = {
   imageUrl: string
 }
 
-export function ProjectCard({ title, description, imageUrl }: ProjectCardProps) {
+export default function ProjectCard({ title, description, imageUrl }: ProjectCardProps) {
   const [open, setOpen] = useState(false)
 
   return (
